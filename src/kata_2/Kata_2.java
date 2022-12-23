@@ -6,17 +6,17 @@ import java.util.Map;
 public class Kata_2 {
 
     public static void main(String[] args) {
-        Integer[] data = {1, 1, 1, 1, 2, 3, 3, 3, 4, 4, 4, 4, 5, 5};
+        String[] data = {"Carlos", "Carlos", "Pedro", "Arturo", "Pedro", "Carlos"};
         Histogram histo = new Histogram(data);
         
         
-        Map<Integer,Integer> histogr = histo.getHistogram();
+        Map<String,Integer> histogr = histo.getHistogram();
         
         
         
         
         
-        for (Map.Entry<Integer, Integer> valores: histogr.entrySet()) {
+        for (Map.Entry<String, Integer> valores: histogr.entrySet()) {
             System.out.println(valores.getKey() + " ==> " + valores.getValue());
         }
         
