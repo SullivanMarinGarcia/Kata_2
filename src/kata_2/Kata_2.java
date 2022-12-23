@@ -6,15 +6,15 @@ import java.util.Map;
 public class Kata_2 {
 
     public static void main(String[] args) {
-        int[] data = {1, 1, 1, 1, 1, 2, 3, 3, 3, 4, 4, 4, 4, 5, 5};
+        int[] data = {1, 1, 1, 1, 2, 3, 3, 3, 4, 4, 4, 4, 5, 5};
+        Histogram histo = new Histogram(data);
         
-        Map<Integer, Integer> histogram = new HashMap<Integer, Integer>();
         
-        for (int key: data) {
-            histogram.put(key, histogram.containsKey(key) ? histogram.get(key) + 1: 1);
-        }
+        Map<Integer,Integer> histogr = histo.getHistogram();
         
-        for (Map.Entry<Integer, Integer> valores: histogram.entrySet()) {
+        
+        
+        for (Map.Entry<Integer, Integer> valores: histogr.entrySet()) {
             System.out.println(valores.getKey() + " ==> " + valores.getValue());
         }
         
