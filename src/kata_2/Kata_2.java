@@ -14,6 +14,8 @@ public class Kata_2 {
         
         
         
+        
+        
         for (Map.Entry<Integer, Integer> valores: histogr.entrySet()) {
             System.out.println(valores.getKey() + " ==> " + valores.getValue());
         }
